@@ -1,0 +1,428 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f6f2e2;
+}
+
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+.divider {
+  border-bottom: 20px solid #b5ab81;
+  margin: 20px 0 20px 0;
+  width: 100%;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+  .page {
+    padding: 0 10px;
+  }
+}
+
+/* HEADERS */
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header img {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  margin-top: 5px;
+}
+
+/* END OF HEADERS */
+
+/* FORMATTING */
+
+.column {
+  flex: 1;
+  padding: 0px 20px;
+}
+
+.band-description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.album-description {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+/* END OF FORMATTING */
+
+/* STYLES */
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* END OF STYLES */
+
+/* NAVBAR */
+
+.navbar {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #b5ab81;
+  position: static;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 55px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+  color: #db704c;
+}
+
+li a.active {
+  background-color: #db704c;
+  color: white;
+}
+
+/* END OF NAVBAR */
+
+/* TABLE */
+
+.center-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*END OF TABLE*/
+
+/* FOOTER */
+
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #b5ab81;
+}
+
+.footer-text {
+  padding-top: 12px;
+  padding-left: 40px;
+  float: left;
+}
+
+footer .social-icons {
+  padding-top: 12px;
+  padding-right: 40px;
+  float: right;
+}
+
+.social-icons a img {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+}
+/* END OF FOOTER */
+
+/* ***************** */
+/* PAGE SPECIFIC CSS */
+/* ***************** */
+
+/* ABOUT */
+
+#band-photos {
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+}
+
+#band-photos img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#photo-description {
+  margin-bottom: 20px;
+  color: #4f3837;
+  margin: 25px 100px 25px 100px;
+  text-align: justify;
+}
+
+button[type="submit"] {
+  display: block;
+  width: auto;
+  padding: 10px 20px;
+  margin: 0 auto;
+  background-color: #b5ab81;
+  color: #4f3837;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* MUSIC */
+
+.audio-container {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.format-modal {
+  margin: 25px 100px 25px 100px;
+}
+
+#timed {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#timed .format-modal {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.format-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#close-button {
+  padding: 10px;
+}
+
+/* TOUR */
+
+.table-header {
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+.ticket form {
+  margin-bottom: 50px;
+}
+
+.ticket h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.ticket p {
+  text-align: center;
+}
+
+.tour img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tour-dates table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 8px;
+}
+
+#ticket img {
+  width: 100%;
+  height: 100%;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-container > div {
+  width: 100%;
+  text-align: center;
+}
+
+.ticker {
+  bottom: 0;
+  max-width: 96%;
+  overflow: hidden;
+  background-color: #333;
+  color: #fff;
+}
+
+.tour-dates-scroll {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scroll 60s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.button-shift {
+  margin-right: 0px;
+}
+
+/* SHOP */
+
+.store-margin-left {
+  padding-left: 30px;
+}
+
+.store-margin-right {
+  padding-right: 20px;
+}
+
+.centered-table {
+  margin: auto;
+  width: 80%; /* Adjust this to space out your items */
+}
+
+.centered-table td {
+  padding: 10px; /* Adjust this to space out your items */
+}
+
+.centered-table a {
+  text-decoration: none;
+  color: #4f3837;
+}
+
+/* CONTACT */
+
+#contact-form {
+  width: 100%; /* Use 100% width for smaller screens, adjust as needed */
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}

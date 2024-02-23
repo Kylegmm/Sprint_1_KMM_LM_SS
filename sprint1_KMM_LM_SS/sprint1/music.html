@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Echo Waves</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="music.html" class="active">Music</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <img src="./images/tourKhaki.png" alt="The Echo Waves Tour" />
+    </header>
+
+    <main class="flex-container">
+      <div class="divider"></div>
+      <h1>Listen to our Latest Singles Here</h1>
+      <div class="divider"></div>
+      <div id="timed" class="timed">
+        <p class="format-modal">
+          Thank you for listening to our music. We hope you enjoyed it. If you
+          would like to hear more, please visit our shop page to purchase our
+          albums.
+        </p>
+        <div id="close-button">
+          <span id="close" style="cursor: pointer"></span>
+        </div>
+        <a class="format-modal" href="./shop.html">CLICK HERE</a>
+      </div>
+
+      <div class="audio-player">
+        <h3>Mesmerizing</h3>
+        <div class="audio-container">
+          <audio controls id="audioPlayer">
+            <source src="./music/mesmerizing-15617.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+      <div class="audio-player">
+        <h3>The Destroyer</h3>
+        <div class="audio-container">
+          <audio controls>
+            <source src="./music/the-destroyer-109436.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+      <div class="audio-player">
+        <h3>Indie Summer</h3>
+        <div class="audio-container">
+          <audio controls>
+            <source src="./music/indie-summer-141351.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+      <div><br /></div>
+    </main>
+    <footer class="footer">
+      <div class="footer-text">
+        <h3>2024 SD Group 2</h3>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="./images/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="./images/twitter.png" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="./images/instagram.png" alt="Instagram" />
+        </a>
+      </div>
+    </footer>
+    <script src="Mscript.js"></script>
+  </body>
+</html>
